@@ -27,8 +27,14 @@ with orm.Session(engine) as session:
     # Get a specific pupil
 
     pupil = session.query(m.Pupil).\
-        filter_by(first_name='Ada').\
-        filter_by(last_name='Lovelace').\
+        filter_by(first_name='Bob').\
+        filter_by(last_name='Smith').\
+        all()
+
+    # Get matches
+
+    pupil = session.query(m.Pupil).\
+        filter_by(first_name='Bob').\
         all()
 
     print(pupil)

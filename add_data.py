@@ -7,10 +7,12 @@ import models as m
 ada = m.Pupil(first_name='Ada', last_name='Lovelace')
 bob = m.Pupil(first_name='Bob', last_name='Smith')
 alan = m.Pupil(first_name='Alan', last_name='Turing')
+bob2 = m.Pupil(first_name='Bob', last_name='Jones')
 
 pupils = [
     bob,
-    alan
+    alan,
+    bob2
 ]
 
 # Now create some instances of subjects
